@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Babylonica&display=swap");
+
+.navbar .logo {
+  font-family: "Babylonica", cursive;
+  color: #7d6e83;
+  cursor: pointer;
+  position: relative;
+  animation-name: LogoAnimation;
+  animation-duration: 1.5s;
+}
+
+.navbar .logo h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.navbar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.navbar nav ul li {
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  animation-name: LogoAnimation;
+  cursor: pointer;
+  animation-duration: 2s;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #2b3a55;
+  font-weight: 400;
+}
+
+li:hover {
+  transform: scale(1.2);
+  background-color: #ffe6e6;
+  color: white;
+}
+
+a:hover {
+  transition: all 0.2s ease;
+}
+
+.bar_icon {
+  display: none;
+}
+
+.Cross_icon {
+  display: none;
+}
+
+@keyframes LogoAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .hidden {
+    display: block;
+  }
+
+  .not_hidden {
+    display: none;
+  }
+
+  .navbar nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    background-color: white;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    animation-name: NavAnimation;
+    animation-duration: 2s;
+  }
+
+  .bar_icon {
+    display: block;
+    transform: scale(1.5);
+    padding-left: 70px;
+  }
+
+  .Cross_icon {
+    transform: scale(1.5);
+    display: block;
+    padding-left: 70px;
+  }
+
+  .navbar .logo h1 {
+    font-size: 3rem;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+  }
+
+  .navbar nav ul li {
+    padding: 25px;
+  }
+
+  .navbar nav ul li:hover {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbar nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .hidden {
+    display: block;
+  }
+
+  .not_hidden {
+    display: none;
+  }
+
+  .navbar nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    background-color: white;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    animation-name: NavAnimation;
+    animation-duration: 2s;
+  }
+
+  .bar_icon {
+    display: block;
+    transform: scale(1.5);
+    padding-left: 70px;
+  }
+
+  .Cross_icon {
+    transform: scale(1.5);
+    display: block;
+    padding-left: 70px;
+  }
+
+  .navbar .logo h1 {
+    font-size: 3rem;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+  }
+
+  .navbar nav ul li {
+    padding: 25px;
+  }
+
+  .navbar nav ul li:hover {
+    transform: scale(1);
+  }
+}
+@keyframes NavAnimation {
+  0% {
+    right: 0%;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
